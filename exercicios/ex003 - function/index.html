@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<!-- Script que executa sozinho, sem a intervenção do usuário -->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira ação function</title>
+    <style>
+       
+       body{
+        font: 20pt bolder black;
+       }
+       
+       div{
+        background-color: rgb(26, 200, 26);
+        line-height:200px ;
+        margin: 200px ;
+        width: 250px;
+        height: 200px;
+        border: 1px solid black;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrou()" onmouseout="sair()">
+        Melhor Preço
+    </div>
+
+<script>
+    var a = window.document.getElementById ('area')
+    
+    function clicar(){
+        a.innerText='Oportunidade unica'
+        a.style.background = 'red'
+    }
+    function entrou(){
+        a.innerText ='Tem sorte?'
+        a.style.background = 'yellow'
+    }
+    function sair(){
+        a.innerText ='ola valdeir'
+        a.style.background = 'green'
+    }
+
+    
+
+</script>
+
+</body>
+</html>

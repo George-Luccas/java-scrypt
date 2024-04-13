@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+</head>
+<body>
+    <p>
+        Insira sua velocidade : <input type="number" name="vel" id="ivel">
+        <input type="button" value="verificar" onclick="calcular()">    
+    </p>
+    <div id="iresultado">
+
+    </div>
+
+<script>
+
+function calcular(){
+var vel1 = document.getElementById('ivel')
+var vel2 = Number(vel1.value)
+var res = document.getElementById('iresultado')
+
+res.innerHTML =`<p>Sua velocidades é de ${vel2} siga com cuidado!</p>`
+res.innerHTML +=' Use cinto de segurança , ele salva <strong>Vidas</strong>'
+
+if (vel2 > 100){ 
+ res.innerHTML += `Você será <strong>MULTADO</strong> Por excesso de velocidade`
+}
+
+
+}
+
+
+</script>
+
+
+
+</body>
+</html>

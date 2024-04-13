@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa de estrangeiros</title>
+</head>
+<body>
+    <div>
+        <p>verifique sua nacionalidade </p> País :<input type="text" name="nacional" id="inacional">
+        
+        <input type="button" value="Verificar" onclick="verificar()">
+    </div>
+    <div id="res">
+
+    </div>
+    
+
+<script>
+
+    function verificar(){
+        var pa1 = document.getElementById('inacional').value;
+        var res =document.getElementById ('res');
+
+        if (pa1 == '
+        brasil'){
+        res.innerHTML = `<p>Seus pais é <strong>${pa1}</strong> </p><p>Você é dos nossos é brasiilerim</p>`
+        }
+        else {
+            res.innerHTML = `Seu pais é ${pa1} Seja bem vindo ! <p> Você è Estrangeiro!</p>`
+        }
+
+
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando dados cliente</title>
+    <style>
+        #res { 
+            border: 1px solid red;
+            width: 417px;
+            margin-top: 30px;
+            background-color: rgba(11, 220, 220, 0.34);
+            font-size: larger;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
+
+        }
+    </style>
+</head>
+<body>
+ <input type="number" name="n1" id="n1"> + <input type="number" name="n2" id="n2">
+
+ <input type="button" value="Somar" onclick="soma()" id="soma">
+
+ <div id="res">
+    Resultado
+ </div>
+
+ <script>
+    function soma(){
+        var n1 = document.getElementById('n1')
+        var n2 = document.getElementById('n2')
+        var resu =document.getElementById('res')
+        var r1 = Number(n1.value)
+        var r2 = Number(n2.value)
+        var res = r1+r2
+        resu.innerHTML = `A soma de ${r1} e ${r2} è = ${res}`
+ 
+    }
+
+ </script>
+
+</body>
+</html>
